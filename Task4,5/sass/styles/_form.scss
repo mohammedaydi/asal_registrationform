@@ -1,0 +1,90 @@
+$inputColor: rgb(182, 21, 182);
+$formColor: #072542;
+.form-wrapper {
+  background-color: $formColor;
+  border-radius: 20px;
+  padding: 2rem 10vw;
+
+  .field-wrapper {
+    @include flexLayout(column, flex-start, flex-start);
+    gap: 0.3rem;
+    margin-top: 0.7rem;
+
+    label {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.4rem;
+    }
+    input[type="text"] {
+      font-size: 0.8rem;
+      color: black;
+      padding: 0.8rem 0.4rem;
+      width: 400px;
+
+      border-radius: 10px;
+      border: none;
+      &:focus {
+        outline: 0px white solid;
+        border: 1px $inputColor solid;
+        box-shadow: 1px 1px 5px $inputColor;
+      }
+    }
+    input[type="date"] {
+      @extend input, [type="text"];
+      cursor: pointer;
+    }
+    input[type="password"] {
+      @extend input, [type="text"];
+    }
+    textarea {
+      @extend input, [type="text"];
+      resize: none;
+    }
+    select {
+      @extend input, [type="text"];
+      cursor: pointer;
+      option {
+        color: black;
+        cursor: pointer;
+      }
+    }
+  } //end of field wrapper
+
+  .radio-box {
+    @include flexLayout(row, flex-start, center);
+
+    > div {
+      @include flexLayout(row, flex-start, center);
+    }
+    input[type="radio"] {
+      accent-color: $inputColor;
+    }
+  }
+  .check-box {
+    @include flexLayout(column, flex-start, flex-start);
+    padding: 0rem 0.4rem;
+
+    > label {
+      padding: 0.6rem 0rem;
+    }
+    > div {
+      @include flexLayout(row, flex-start, center);
+      input[type="checkbox"] {
+        accent-color: $inputColor;
+      }
+    }
+  }
+  .button-wrapper {
+    @include flexLayout(row, flex-end, center);
+    padding: 2rem 0rem 0rem 1rem;
+
+    button {
+      background-color: $inputColor;
+      color: white;
+      padding: 0.6rem 2rem;
+      cursor: pointer;
+
+      border: none;
+      border-radius: 10px;
+    }
+  }
+}
