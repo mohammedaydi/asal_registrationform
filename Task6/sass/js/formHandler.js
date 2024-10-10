@@ -2,7 +2,6 @@ const changeColor = (event) => {
   const id = event.target.id;
   const text = document.getElementById("header");
   text.style = `color: ${id};`;
-  console.log();
 };
 
 const validator = (formData) => {
@@ -77,12 +76,8 @@ const formHandler = (event) => {
 
   const form = document.getElementById("regForm");
   let formData = new FormData(form);
-  //   let queryString = new URLSearchParams(formData).toString();
-  //   console.log(queryString);
 
   validator(formData);
-
-  //redirect to a new page
 };
 
 window.formHandler = formHandler;

@@ -16,23 +16,11 @@
         font-size: 0.6rem;
         padding: 0.2rem 0.4rem;
       }
-      input[type="text"] {
-        font-size: 0.6rem;
-        padding: 0.8rem 0.4rem;
-        width: 50vw;
-      }
-      input[type="date"] {
-        @extend input, [type="text"];
-      }
-      input[type="password"] {
-        @extend input, [type="text"];
-      }
-      textarea {
-        @extend input, [type="text"];
-      }
-      select {
-        @extend input, [type="text"];
-      }
     } //end of field wrapper
+    .inp {
+      font-size: 0.6rem;
+      padding: 0.8rem 0.4rem;
+      width: 50vw;
+    }
   }
 }
