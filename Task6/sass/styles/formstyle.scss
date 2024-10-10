@@ -1,0 +1,35 @@
+$background: #031d35;
+$font-main: white;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: comfortaa;
+  color: $font-main;
+}
+body {
+  background-color: $background;
+}
+@import "./mixins";
+@import "./header";
+@import "./form";
+@import "./res";
+
+.container {
+  @include flexLayout(column, flex-start, center);
+  //   background-color: red;
+  padding: 0rem 2rem 2rem 2rem;
+}
+.container2 {
+  @include flexLayout(column, center, center);
+  height: 100vh;
+  gap: 4rem;
+}
+.container2 form {
+  @include flexLayout(row, center, center);
+  gap: 2rem;
+}
+.item {
+  @include flexLayout(row, center, center);
+  gap: 0.3rem;
+}

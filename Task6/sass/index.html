@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="./styles/formstyle.css" />
+    <script type="module" src="./js/formHandler.js"></script>
+  </head>
+  <body>
+    <header><h1>Student Registration Form</h1></header>
+    <div class="container">
+      <div class="form-wrapper">
+        <form onsubmit="formHandler(event)" id="regForm">
+          <div class="field-wrapper">
+            <label for="fname">First Name</label>
+            <input
+              class="inp"
+              type="text"
+              placeholder="enter your name"
+              id="fname"
+              name="fname"
+              required
+            />
+          </div>
+          <div class="field-wrapper">
+            <label for="lname">Last Name</label>
+            <input
+              class="inp"
+              type="text"
+              placeholder="enter your last name"
+              id="lname"
+              name="lname"
+              required
+            />
+          </div>
+          <div class="field-wrapper">
+            <label for="email">Email</label>
+            <input
+              class="inp"
+              type="text"
+              id="email"
+              placeholder="it should contain @"
+              name="email"
+              required
+            />
+          </div>
+          <div class="field-wrapper">
+            <label for="mobile">Mobile</label>
+            <input
+              class="inp"
+              type="text"
+              placeholder="10 digits only.."
+              id="phone"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="field-wrapper">
+            <label>Gender</label>
+            <div class="radio-box">
+              <div>
+                <input
+                  type="radio"
+                  value="male"
+                  name="gender"
+                  title="male"
+                  id="male"
+                  required
+                />
+                <label for="male">Male</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  value="female"
+                  name="gender"
+                  id="female"
+                  required
+                />
+                <label for="female">Female</label>
+              </div>
+            </div>
+          </div>
+          <div class="field-wrapper">
+            <label for="bdate">Date of birth</label>
+            <input
+              class="inp"
+              type="date"
+              placeholder="enter your name"
+              id="bdate"
+              name="bdate"
+              required
+            />
+          </div>
+          <div class="field-wrapper">
+            <label for="address"> Address </label>
+            <textarea
+              class="inp"
+              rows="5"
+              wrap="soft"
+              placeholder="enter your address"
+              id="address"
+              name="address"
+              required
+            ></textarea>
+          </div>
+          <div class="field-wrapper">
+            <label for="city">City</label>
+            <input
+              class="inp"
+              type="text"
+              placeholder="enter your city"
+              id="city"
+              name="city"
+              required
+            />
+          </div>
+          <div class="field-wrapper">
+            <label for="pin">Area PIN</label>
+            <input
+              class="inp"
+              type="text"
+              placeholder="your correct PIN"
+              id="pin"
+              name="pin"
+              required
+            />
+          </div>
+          <div class="field-wrapper">
+            <label for="state">State</label>
+            <input
+              class="inp"
+              type="text"
+              placeholder="enter you state"
+              id="state"
+              name="state"
+              required
+            />
+          </div>
+
+          <div class="field-wrapper">
+            <label for="qual">Qualifications</label>
+            <select class="inp" id="qual" name="qual" required>
+              <option value="op1" disabled selected>
+                select qualification
+              </option>
+              <option value="op1">op1</option>
+              <option value="op2">op2</option>
+              <option value="op3">op3</option>
+              <option value="op4">op4</option>
+            </select>
+          </div>
+          <div class="field-wrapper">
+            <div class="check-box">
+              <label>Specialization</label>
+              <div>
+                <input type="checkbox" name="spec" id="cs" value="cs" />
+                <label for="cs">CS</label>
+              </div>
+              <div>
+                <input type="checkbox" name="spec" id="it" value="it" />
+                <label for="it">IT</label>
+              </div>
+              <div>
+                <input type="checkbox" name="spec" id="ca" value="ca" />
+                <label for="ca">CA</label>
+              </div>
+              <div>
+                <input type="checkbox" name="spec" id="tc" value="tc" />
+                <label for="tc">TC</label>
+              </div>
+            </div>
+          </div>
+          <div class="field-wrapper">
+            <label for="password">Password</label>
+            <input
+              class="inp"
+              required
+              type="password"
+              placeholder="insert a password"
+              id="password"
+              name="password"
+            />
+          </div>
+          <div class="button-wrapper">
+            <button type="submit" id="register">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

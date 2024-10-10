@@ -1,0 +1,26 @@
+@media only screen and (max-width: 520px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-wrapper {
+    .button-wrapper button {
+      padding: 0.6rem 1.1rem;
+      font-size: 0.6rem;
+    }
+    padding: 2rem 10vw;
+
+    .field-wrapper {
+      gap: 0.3rem;
+      label {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+      }
+    } //end of field wrapper
+    .inp {
+      font-size: 0.6rem;
+      padding: 0.8rem 0.4rem;
+      width: 50vw;
+    }
+  }
+}
